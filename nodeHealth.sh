@@ -5,6 +5,13 @@
 # Version : v1
 ############################################################
 
+set -x # Debug Mode
+set -e # exit when error occurs
+set -o pipefail # exit when pipe fails
+
+
+
+
 echo "Displaying the Disk Space of Node:- "
 df -h
 
@@ -13,3 +20,11 @@ free -g
 
 echo "Displaying the number of CPU :- "
 nproc
+
+echo "Display the processes running"
+ps -ef 
+
+echo "Display only required process"
+ps -ef | grep python
+
+
