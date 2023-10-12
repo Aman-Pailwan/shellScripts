@@ -1,1 +1,1 @@
-# shellScripts
+# shellScripts with bash as executables
